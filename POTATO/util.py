@@ -13,7 +13,7 @@ st.title("Прогнозирование фитофтороза")
 st.write("Привет мир,это проект машинного обучение, который выявляет наиболее распространенные болезни растений фитофтороз")
 
 def predict_img(img):
-    model = tf.keras.models.load_model(os.path.join("POTATO\my_new__model.h5"))
+    model = tf.keras.models.load_model(os.path.join("POTATO/my_new__model.h5"))
 
     test_data = tf.keras.preprocessing.image.load_img(img)
     test_data = tf.keras.preprocessing.image.img_to_array(test_data)
